@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+
+
+.banner-image {
+    background-image: url("images/banner-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 350px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.banner-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 2px 5px;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    width: fit-content;
+    background-color: rgba(49, 49, 49, .7);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #fcd8b4;
+    padding: 0 12.5%;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 40%;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+header>a {
+    font-size: 24px;
+    color: rgb(122, 71, 122);
+}
+
+header>ul {
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+header>ul li {
+    margin-left: 100px;
+}
+
+header>ul a {
+    font-size: 1.2rem;
+    color: rgb(122, 71, 122);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.todo-item {
+    background-color: rgba(25, 24, 24, 0.87);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.todo-item>p {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 60%;
+    color: #fff;
+}
+
+.todo-item .buttons {
+    width: 40%;
+    padding: 0 10px;
+}
+
+.buttons>* {
+    display: inline-block;
+
+}
+
+
+.buttons>div {
+    float: left;
+    width: 60%;
+}
+
+.buttons>div>* {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.buttons>div>*:first-child {
+    margin-right: 20px;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    background-color: #fcd8b4;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(122, 71, 122);
+    margin: 10px 0;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.delete-btn {
+    float: right;
+}
