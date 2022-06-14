@@ -89,6 +89,46 @@ li {
     list-style: none;
 }
 
+.form {
+    margin-bottom: 10px;
+    position: relative;
+    height: 50px;
+
+}
+
+.form>div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form>div #todo-task {
+    width: 310px;
+    height: 24px;
+    outline: none;
+}
+
+#submit {
+    width: 70px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.empty-alert {
+    display: none;
+    width: fit-content;
+    padding: 1px;
+
+    position: absolute;
+    top: 26px;
+    right: 135px;
+    color: red;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 .todo-item {
     background-color: rgba(25, 24, 24, 0.87);
     color: #fff;
@@ -143,6 +183,10 @@ li {
     margin: 10px 0;
     text-align: center;
     padding-top: 3px;
+}
+
+.undone-btn {
+    visibility: hidden;
 }
 
 .delete-btn {
