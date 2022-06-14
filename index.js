@@ -44,7 +44,7 @@ let toDoList = document.querySelector(".todo-list");
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", e => {
     e.preventDefault();
-    const todoTask = document.querySelector("#todo-task").value;
+    let todoTask = document.querySelector("#todo-task").value;
     if (todoTask == "") {
         setTimeout(() => {
             document.querySelector(".empty-alert").style.display = "block";
@@ -62,7 +62,9 @@ submitBtn.addEventListener("click", e => {
                 <a href="#" class="delete-btn btn">Delete</a>
             </div>
         </div>
-`
+`;
+
+        document.querySelector("#todo-task").value = "";
     }
     let doneBtns = document.querySelectorAll(".done-btn");
     for (let doneBtn of doneBtns) {
@@ -88,7 +90,10 @@ submitBtn.addEventListener("click", e => {
     for (let deletebtn of deleteBtns) {
         deletebtn.addEventListener("click", e => {
             e.preventDefault();
-            e.target.parentElement.parentElement.remove();
+            if (confirm("Are you sure?")) {
+                e.target.parentElement.parentElement.remove();
+            }
+
         });
     }
 })

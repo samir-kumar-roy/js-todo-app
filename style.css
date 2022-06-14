@@ -106,12 +106,19 @@ li {
     width: 310px;
     height: 24px;
     outline: none;
+    padding-left: 10px;
+    padding-bottom: 2px;
 }
 
 #submit {
     width: 70px;
     padding: 2px 0;
     text-align: center;
+    background-color: #fcd8b4;
+    color: rgb(122, 71, 122);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 2px;
 }
 
 .empty-alert {
